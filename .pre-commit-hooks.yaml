@@ -1,0 +1,5 @@
+-  id: function_name_fixer
+   name: function_name_fixer
+   description: Simply check whether function names are snake case and fix them
+   entry: function_name_fixer
+   language: python
