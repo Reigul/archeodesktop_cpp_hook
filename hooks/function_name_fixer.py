@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import argparse
 import io
 import re
@@ -37,7 +35,6 @@ def fix_strings(filename: str) -> int:
     with open(filename, encoding='UTF-8', newline='') as f:
         contents = f.read()
     line_offsets = get_line_offsets_by_line_no(contents)
-
     splitcontents = list(contents)
 
     tokens_l = list(tokenize.generate_tokens(io.StringIO(contents).readline))
