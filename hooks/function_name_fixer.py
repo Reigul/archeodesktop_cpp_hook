@@ -6,7 +6,7 @@ from typing import List
 from typing import Optional
 from typing import Sequence
 
-START_QUOTE_RE = re.compile('^[a-zA-Z]*"')
+START_QUOTE_RE = re.compile('^[a-zA-Z_]* [a-zA-Z:_]*([a-zA-Z:_ ]*)')
 
 
 def handle_match(token_text: str) -> str:
